@@ -7,12 +7,45 @@ body {
         "sidebar header"
         "sidebar content-area"
     ;
-
+    border: 1px solid gray;
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: azure;
+    display: grid;
+    grid-template: 1fr 5fr 5fr / 1fr;
+    gap: 1rem;
+}
+.sidebar-header {
+    grid-row: 1 / 2;
+    background-color: aquamarine;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    place-items: center;
+    gap: 5px;
+
+    padding: 5px;
+}
+.sidebar-links--top {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    place-items: center;
+}
+.sidebar-links--bottom {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: start;
+
+    padding-top: 30px;
+    border-top: 1px solid lightslategray;
+}
+.link {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
 }
 .header {
     grid-area: header;
