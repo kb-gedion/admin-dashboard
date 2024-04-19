@@ -74,4 +74,39 @@ body {
 .content-area {
     grid-area: content-area;
     background-color: lemonchiffon;
+
+    display: grid;
+    grid-template: 1fr / 2.5fr 1fr;
+}
+.project-container {
+    margin: 0 20px;
+}
+.project-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, 1fr);
+    gap: 20px;
+
+}
+
+.project-card {
+    background-color: tan;
+    padding: 5px 20px;
+}
+
+.news-area-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-right: 20px;
+}
+.announcement-section,
+.trending-section {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+.announcement-container,
+.trending-container {
+    background-color: aliceblue;
 }
