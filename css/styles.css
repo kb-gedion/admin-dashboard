@@ -8,36 +8,48 @@ body {
         "sidebar content-area"
     ;
     border: 1px solid gray;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: azure;
+    background-color: #283618;
+    color: #fefae0;
     display: grid;
     grid-template: 1fr 5fr 5fr / 1fr;
-    gap: 1rem;
+
+    height: 100vh;
+    padding: 0 10px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #fefae0;
 }
 .sidebar-header {
     grid-row: 1 / 2;
-    background-color: aquamarine;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
-    place-items: center;
-    gap: 5px;
+    align-items: center;
 
     padding: 5px;
+    
+}
+.sidebar-header .logo {
+    height: 1rem;
+}
+.sidebar-header .logo-main {
+    height: 2.5rem;
 }
 .sidebar-links--top {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    place-items: center;
+    padding-bottom: 1rem;
 }
 .sidebar-links--bottom {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    justify-items: center;
-    align-items: start;
 
     padding-top: 30px;
     border-top: 1px solid lightslategray;
@@ -46,12 +58,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
+    place-items: center;
+}
+.link h4 {
+    justify-self: start;
 }
 
 
 .header {
     grid-area: header;
-    background-color: darkolivegreen;
+    /* background-color: darkolivegreen; */
 
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -73,7 +89,7 @@ body {
 }
 .content-area {
     grid-area: content-area;
-    background-color: lemonchiffon;
+    /* background-color: lemonchiffon; */
 
     display: grid;
     grid-template: 1fr / 2.5fr 1fr;
@@ -91,7 +107,7 @@ body {
 }
 
 .project-card {
-    background-color: tan;
+    /* background-color: tan; */
     padding: 5px 20px;
 }
 
@@ -108,5 +124,5 @@ body {
 }
 .announcement-container,
 .trending-container {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
